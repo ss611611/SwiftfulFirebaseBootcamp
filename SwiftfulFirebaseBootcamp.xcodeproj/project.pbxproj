@@ -11,6 +11,8 @@
 		EEA9440E2C76D87600D4E77A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA9440D2C76D87600D4E77A /* ContentView.swift */; };
 		EEA944102C76D87700D4E77A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEA9440F2C76D87700D4E77A /* Assets.xcassets */; };
 		EEA944132C76D87700D4E77A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEA944122C76D87700D4E77A /* Preview Assets.xcassets */; };
+		EEA9441A2C76DD3B00D4E77A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EEA944192C76DD3B00D4E77A /* GoogleService-Info.plist */; };
+		EEA9441D2C76DF3C00D4E77A /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = EEA9441C2C76DF3C00D4E77A /* FirebaseAnalytics */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,7 @@
 		EEA9440D2C76D87600D4E77A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EEA9440F2C76D87700D4E77A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EEA944122C76D87700D4E77A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EEA944192C76DD3B00D4E77A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEA9441D2C76DF3C00D4E77A /* FirebaseAnalytics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +57,7 @@
 			children = (
 				EEA9440B2C76D87600D4E77A /* SwiftfulFirebaseBootcampApp.swift */,
 				EEA9440D2C76D87600D4E77A /* ContentView.swift */,
+				EEA944192C76DD3B00D4E77A /* GoogleService-Info.plist */,
 				EEA9440F2C76D87700D4E77A /* Assets.xcassets */,
 				EEA944112C76D87700D4E77A /* Preview Content */,
 			);
@@ -83,6 +88,9 @@
 			dependencies = (
 			);
 			name = SwiftfulFirebaseBootcamp;
+			packageProductDependencies = (
+				EEA9441C2C76DF3C00D4E77A /* FirebaseAnalytics */,
+			);
 			productName = SwiftfulFirebaseBootcamp;
 			productReference = EEA944082C76D87600D4E77A /* SwiftfulFirebaseBootcamp.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,9 @@
 				Base,
 			);
 			mainGroup = EEA943FF2C76D87600D4E77A;
+			packageReferences = (
+				EEA9441B2C76DF3C00D4E77A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = EEA944092C76D87600D4E77A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,6 +138,7 @@
 			files = (
 				EEA944132C76D87700D4E77A /* Preview Assets.xcassets in Resources */,
 				EEA944102C76D87700D4E77A /* Assets.xcassets in Resources */,
+				EEA9441A2C76DD3B00D4E77A /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +356,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EEA9441B2C76DF3C00D4E77A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EEA9441C2C76DF3C00D4E77A /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EEA9441B2C76DF3C00D4E77A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EEA944002C76D87600D4E77A /* Project object */;
 }
