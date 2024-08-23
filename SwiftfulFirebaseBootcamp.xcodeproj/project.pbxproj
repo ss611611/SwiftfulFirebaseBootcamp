@@ -13,6 +13,12 @@
 		EEA944132C76D87700D4E77A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEA944122C76D87700D4E77A /* Preview Assets.xcassets */; };
 		EEA9441A2C76DD3B00D4E77A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EEA944192C76DD3B00D4E77A /* GoogleService-Info.plist */; };
 		EEA9441D2C76DF3C00D4E77A /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = EEA9441C2C76DF3C00D4E77A /* FirebaseAnalytics */; };
+		EEA944202C76E63E00D4E77A /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = EEA9441F2C76E63E00D4E77A /* FirebaseAuth */; };
+		EEA944232C76E79B00D4E77A /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA944222C76E79B00D4E77A /* AuthenticationView.swift */; };
+		EEA944272C76EE6100D4E77A /* SignInEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA944262C76EE6100D4E77A /* SignInEmailView.swift */; };
+		EEA944292C76F24D00D4E77A /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA944282C76F24D00D4E77A /* AuthenticationManager.swift */; };
+		EEA9442B2C7708AE00D4E77A /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA9442A2C7708AE00D4E77A /* RootView.swift */; };
+		EEA9442D2C770D9100D4E77A /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA9442C2C770D9100D4E77A /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,11 @@
 		EEA9440F2C76D87700D4E77A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EEA944122C76D87700D4E77A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EEA944192C76DD3B00D4E77A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EEA944222C76E79B00D4E77A /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
+		EEA944262C76EE6100D4E77A /* SignInEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInEmailView.swift; sourceTree = "<group>"; };
+		EEA944282C76F24D00D4E77A /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
+		EEA9442A2C7708AE00D4E77A /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		EEA9442C2C770D9100D4E77A /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +41,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EEA9441D2C76DF3C00D4E77A /* FirebaseAnalytics in Frameworks */,
+				EEA944202C76E63E00D4E77A /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,6 +53,7 @@
 			children = (
 				EEA9440A2C76D87600D4E77A /* SwiftfulFirebaseBootcamp */,
 				EEA944092C76D87600D4E77A /* Products */,
+				EEA9441E2C76E63E00D4E77A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,6 +70,7 @@
 			children = (
 				EEA9440B2C76D87600D4E77A /* SwiftfulFirebaseBootcampApp.swift */,
 				EEA9440D2C76D87600D4E77A /* ContentView.swift */,
+				EEA944212C76E75900D4E77A /* Authentication */,
 				EEA944192C76DD3B00D4E77A /* GoogleService-Info.plist */,
 				EEA9440F2C76D87700D4E77A /* Assets.xcassets */,
 				EEA944112C76D87700D4E77A /* Preview Content */,
@@ -70,6 +84,25 @@
 				EEA944122C76D87700D4E77A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EEA9441E2C76E63E00D4E77A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EEA944212C76E75900D4E77A /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				EEA9442A2C7708AE00D4E77A /* RootView.swift */,
+				EEA944222C76E79B00D4E77A /* AuthenticationView.swift */,
+				EEA944262C76EE6100D4E77A /* SignInEmailView.swift */,
+				EEA9442C2C770D9100D4E77A /* SettingsView.swift */,
+				EEA944282C76F24D00D4E77A /* AuthenticationManager.swift */,
+			);
+			path = Authentication;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -90,6 +123,7 @@
 			name = SwiftfulFirebaseBootcamp;
 			packageProductDependencies = (
 				EEA9441C2C76DF3C00D4E77A /* FirebaseAnalytics */,
+				EEA9441F2C76E63E00D4E77A /* FirebaseAuth */,
 			);
 			productName = SwiftfulFirebaseBootcamp;
 			productReference = EEA944082C76D87600D4E77A /* SwiftfulFirebaseBootcamp.app */;
@@ -149,8 +183,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEA9442D2C770D9100D4E77A /* SettingsView.swift in Sources */,
 				EEA9440E2C76D87600D4E77A /* ContentView.swift in Sources */,
 				EEA9440C2C76D87600D4E77A /* SwiftfulFirebaseBootcampApp.swift in Sources */,
+				EEA9442B2C7708AE00D4E77A /* RootView.swift in Sources */,
+				EEA944232C76E79B00D4E77A /* AuthenticationView.swift in Sources */,
+				EEA944292C76F24D00D4E77A /* AuthenticationManager.swift in Sources */,
+				EEA944272C76EE6100D4E77A /* SignInEmailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,6 +412,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = EEA9441B2C76DF3C00D4E77A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseAnalytics;
+		};
+		EEA9441F2C76E63E00D4E77A /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EEA9441B2C76DF3C00D4E77A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
