@@ -23,6 +23,7 @@
 		EEBDCEE72C8FF44C0006D595 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = EEBDCEE62C8FF44C0006D595 /* GoogleSignInSwift */; };
 		EEBDCEEB2C8FF8F40006D595 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBDCEEA2C8FF8F40006D595 /* Utilities.swift */; };
 		EEBDCEED2C900CAD0006D595 /* SignInGoogleHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBDCEEC2C900CAD0006D595 /* SignInGoogleHelper.swift */; };
+		EEBDCEEF2C9048260006D595 /* SignInAppleHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBDCEEE2C9048260006D595 /* SignInAppleHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		EEBDCEE82C8FF5A20006D595 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		EEBDCEEA2C8FF8F40006D595 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		EEBDCEEC2C900CAD0006D595 /* SignInGoogleHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInGoogleHelper.swift; sourceTree = "<group>"; };
+		EEBDCEEE2C9048260006D595 /* SignInAppleHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInAppleHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 				EEA9442C2C770D9100D4E77A /* SettingsView.swift */,
 				EEA944282C76F24D00D4E77A /* AuthenticationManager.swift */,
 				EEBDCEEC2C900CAD0006D595 /* SignInGoogleHelper.swift */,
+				EEBDCEEE2C9048260006D595 /* SignInAppleHelper.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -214,6 +217,7 @@
 				EEA944232C76E79B00D4E77A /* AuthenticationView.swift in Sources */,
 				EEA944292C76F24D00D4E77A /* AuthenticationManager.swift in Sources */,
 				EEBDCEEB2C8FF8F40006D595 /* Utilities.swift in Sources */,
+				EEBDCEEF2C9048260006D595 /* SignInAppleHelper.swift in Sources */,
 				EEA944272C76EE6100D4E77A /* SignInEmailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -348,7 +352,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftfulFirebaseBootcamp/Preview Content\"";
-				DEVELOPMENT_TEAM = 53JP7T2TYF;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SwiftfulFirebaseBootcamp/Info.plist;
@@ -378,7 +382,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftfulFirebaseBootcamp/Preview Content\"";
-				DEVELOPMENT_TEAM = 53JP7T2TYF;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SwiftfulFirebaseBootcamp/Info.plist;
