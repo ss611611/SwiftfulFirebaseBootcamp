@@ -39,6 +39,7 @@
 		EED886742C9D4D7C00CD7AF6 /* ProductCellViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED886732C9D4D7C00CD7AF6 /* ProductCellViewBuilder.swift */; };
 		EEE383292CA1398A00EA0B8A /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = EEE383282CA1398A00EA0B8A /* FirebaseCrashlytics */; };
 		EEE3832D2CA13D0200EA0B8A /* CrashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE3832C2CA13D0200EA0B8A /* CrashView.swift */; };
+		EEE3832F2CA1663900EA0B8A /* FirebasePerformance in Frameworks */ = {isa = PBXBuildFile; productRef = EEE3832E2CA1663900EA0B8A /* FirebasePerformance */; };
 		EEF15AB32C9E85ED0055B326 /* Query+EXT.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF15AB22C9E85ED0055B326 /* Query+EXT.swift */; };
 		EEF15AB72C9E87480055B326 /* OnFirstAppearViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF15AB62C9E87480055B326 /* OnFirstAppearViewModifier.swift */; };
 		EEF15AB92C9E87C70055B326 /* FavoriteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF15AB82C9E87C70055B326 /* FavoriteViewModel.swift */; };
@@ -98,6 +99,7 @@
 				EEE383292CA1398A00EA0B8A /* FirebaseCrashlytics in Frameworks */,
 				EEC681CA2C9191AB0039A6B9 /* FirebaseFirestore in Frameworks */,
 				EEBDCEE72C8FF44C0006D595 /* GoogleSignInSwift in Frameworks */,
+				EEE3832F2CA1663900EA0B8A /* FirebasePerformance in Frameworks */,
 				EEF15ABD2C9EB6B10055B326 /* FirebaseStorage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -347,6 +349,7 @@
 				EEC681C92C9191AB0039A6B9 /* FirebaseFirestore */,
 				EEF15ABC2C9EB6B10055B326 /* FirebaseStorage */,
 				EEE383282CA1398A00EA0B8A /* FirebaseCrashlytics */,
+				EEE3832E2CA1663900EA0B8A /* FirebasePerformance */,
 			);
 			productName = SwiftfulFirebaseBootcamp;
 			productReference = EEA944082C76D87600D4E77A /* SwiftfulFirebaseBootcamp.app */;
@@ -596,7 +599,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftfulFirebaseBootcamp/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 53JP7T2TYF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SwiftfulFirebaseBootcamp/Info.plist;
@@ -609,7 +612,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.Jackie.SwiftfulFirebaseBootcamp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -626,7 +629,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftfulFirebaseBootcamp/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 53JP7T2TYF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SwiftfulFirebaseBootcamp/Info.plist;
@@ -639,7 +642,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.Jackie.SwiftfulFirebaseBootcamp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -720,6 +723,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = EEA9441B2C76DF3C00D4E77A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseCrashlytics;
+		};
+		EEE3832E2CA1663900EA0B8A /* FirebasePerformance */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EEA9441B2C76DF3C00D4E77A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebasePerformance;
 		};
 		EEF15ABC2C9EB6B10055B326 /* FirebaseStorage */ = {
 			isa = XCSwiftPackageProductDependency;
