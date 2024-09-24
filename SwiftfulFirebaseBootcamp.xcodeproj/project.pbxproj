@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		EE3FF7562CA2719700A70126 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE3FF7552CA2719700A70126 /* AdSupport.framework */; };
+		EE3FF7582CA271F300A70126 /* AnalyticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3FF7572CA271F300A70126 /* AnalyticsView.swift */; };
+		EE3FF75A2CA2951E00A70126 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = EE3FF7592CA2951E00A70126 /* FirebaseAnalyticsWithoutAdIdSupport */; };
 		EE4FD89F2C91944600541BA3 /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4FD89E2C91944600541BA3 /* AuthenticationViewModel.swift */; };
 		EE4FD8A22C9194E300541BA3 /* SignInEmailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4FD8A12C9194E300541BA3 /* SignInEmailViewModel.swift */; };
 		EE4FD8A52C9195BC00541BA3 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4FD8A42C9195BC00541BA3 /* ProfileView.swift */; };
@@ -55,6 +57,7 @@
 
 /* Begin PBXFileReference section */
 		EE3FF7552CA2719700A70126 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		EE3FF7572CA271F300A70126 /* AnalyticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsView.swift; sourceTree = "<group>"; };
 		EE4FD89E2C91944600541BA3 /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
 		EE4FD8A12C9194E300541BA3 /* SignInEmailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInEmailViewModel.swift; sourceTree = "<group>"; };
 		EE4FD8A42C9195BC00541BA3 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
@@ -100,6 +103,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EEA9441D2C76DF3C00D4E77A /* FirebaseAnalytics in Frameworks */,
+				EE3FF75A2CA2951E00A70126 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
 				EEA944202C76E63E00D4E77A /* FirebaseAuth in Frameworks */,
 				EE3FF7562CA2719700A70126 /* AdSupport.framework in Frameworks */,
 				EEBDCEE52C8FF44C0006D595 /* GoogleSignIn in Frameworks */,
@@ -117,6 +121,7 @@
 		EE3FF7542CA2706300A70126 /* Analytics */ = {
 			isa = PBXGroup;
 			children = (
+				EE3FF7572CA271F300A70126 /* AnalyticsView.swift */,
 			);
 			path = Analytics;
 			sourceTree = "<group>";
@@ -376,6 +381,7 @@
 				EEF15ABC2C9EB6B10055B326 /* FirebaseStorage */,
 				EEE383282CA1398A00EA0B8A /* FirebaseCrashlytics */,
 				EEE3832E2CA1663900EA0B8A /* FirebasePerformance */,
+				EE3FF7592CA2951E00A70126 /* FirebaseAnalyticsWithoutAdIdSupport */,
 			);
 			productName = SwiftfulFirebaseBootcamp;
 			productReference = EEA944082C76D87600D4E77A /* SwiftfulFirebaseBootcamp.app */;
@@ -488,6 +494,7 @@
 				EEF15AC12C9EB95F0055B326 /* SecurityRules.swift in Sources */,
 				EED886742C9D4D7C00CD7AF6 /* ProductCellViewBuilder.swift in Sources */,
 				EEF15AC32C9EBA930055B326 /* StoragesManager.swift in Sources */,
+				EE3FF7582CA271F300A70126 /* AnalyticsView.swift in Sources */,
 				EE4FD8A52C9195BC00541BA3 /* ProfileView.swift in Sources */,
 				EEC0DCF62C9C29D5002EB8BE /* TabbarView.swift in Sources */,
 				EEE383342CA1670300EA0B8A /* PerformanceView.swift in Sources */,
@@ -722,6 +729,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		EE3FF7592CA2951E00A70126 /* FirebaseAnalyticsWithoutAdIdSupport */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EEA9441B2C76DF3C00D4E77A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsWithoutAdIdSupport;
+		};
 		EEA9441C2C76DF3C00D4E77A /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = EEA9441B2C76DF3C00D4E77A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
